@@ -3,11 +3,7 @@
 ## Project Goal:
 Machine learning based model that takes as input any 3D images from a microscope with DAPI channel for the nuclei and two others channel for the centrioles and gives as output the segmentation of nuclei and their corresponding centrioles.
 
-## Global Strategy: 
-1-	Nuclei segmentation
-2-	Nuclei annotation 
-3-	Centriole segmentation 
-4-	Centriole annotation
+## Global Strategy: 
 
 1-	Nuclei segmentation 
 
