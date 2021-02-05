@@ -11,17 +11,15 @@ Machine learning based model that takes as input any 3D images from a microscope
 
 1-	Nuclei segmentation 
 
-Nuclei segmentation will be based on DAPI channel. We don’t need 3D images, but rather the focal image. There are here two possibilities, we could either used our datasets and create mask with a well optimize image processing algorithm such as Ilastik or Cellprofiler and train a neural network on them. Or we could use external images from Kaggle challenge to develop a more global algorithm: https://www.kaggle.com/c/data-science-bowl-2018.
+Nuclei segmentation will be based on DAPI channel. We don’t need 3D images, but rather the focal image. We used an external images from Kaggle challenge to develop a more Mask-RCNN (instacne segmentation) algorithm: https://www.kaggle.com/c/data-science-bowl-2018.
 
 2-	Nuclei annotation
 
-Nucleus will then be separately detected and annotated based on their morphology in the hope of extracting their division stage. There are two possibilities: we can either used a machine learning based on morphology features such as intensity, size, shape and thanks to an unsupervised model find the correct features to classify stages. Or we could create a deep learning algorithm that would take every nucleus as input and different stages as output. However, a labeling for a training and testing set has to be done. Maybe take 3D images.
+Nucleus will then be separately detected and annotated based on their morphology in the hope of extracting their division stage. We used  deep learning algorithms (Resnet, efficientNet) that take every nucleus as input and different stages as output.
 
 3-	Centriole segmentation
 
-Centriole segmentation will be a difficult task for a deep learning model because of the high dimensionality: dataset*position*Z_stack*channel*image_x*image_y which is huge. We need to carefully choose the values to reduce at maximum. For instance, at the first look at the data Z_stack could be in my opinion be lower as for maybe the image size.
-The first step will be to do a deconvolution to have better input images. Then create 3D mask from ilastik software. And finally train a deep learning algorithm. 
-
+Centriole segmentation is a difficult task for a deep learning model because of the high dimensionality: dataset*position*Z_stack*channel*image_x*image_y which is huge (it is the same problem as detect small stars in a image of space with a lot of noises). We need to carefully choose the values to reduce at maximum. For instance, we reduced the z_stack with normal RGB input by putting: (R: mean(z), G: std(z), B: max_projection(z)).
 4-	Centriole annotation 
 
 Based on centriole morphology, we could as for nuclei annotation, detect the division stage of the cell which can be put into perspective from the nuclei annotation.
