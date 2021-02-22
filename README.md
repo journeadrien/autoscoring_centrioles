@@ -6,14 +6,17 @@ Centrioles are barrel-shaped structures that are essential for cellular division
 ## Global Strategy: 
 
 1-	Nuclei segmentation 
+<img src=https://github.com/journeadrien/autoscoring_centrioles/blob/master/images/segmentation.png align="left" height="50%" width="65%">
 
 Nuclei segmentation will be based on DAPI channel. We don’t need 3D images, but rather the focal image. We used an external images from Kaggle challenge to develop a more Mask-RCNN (instacne segmentation) algorithm: https://www.kaggle.com/c/data-science-bowl-2018.
 
-![](images/segmentatation.png)
 
 2-	Nuclei annotation
 
 Nucleus will then be separately detected and annotated based on their morphology in the hope of extracting their division stage. We used  deep learning algorithms (Resnet, efficientNet) that take every nucleus as input and different stages as output.
+
+
+
 
 3-	Centriole segmentation
 
