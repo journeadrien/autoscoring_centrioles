@@ -1,7 +1,7 @@
 # autoscoring_centrioles
 
 ## Project Goal:
-Machine learning based model that takes as input any 3D images from a microscope with DAPI channel for the nuclei and two others channels for the centrioles and gives as output the segmentation of nuclei and their corresponding centrioles as well as statistics.
+Centrioles are barrel-shaped structures that are essential for cellular division. Deregulation of centrosome numbers has long been proposed to contribute to genome instability and tumor formation, whereas mutations in centrosomal proteins have recently been genetically linked to microcephaly and dwarfism. In this project, we proposed an automated counting of the centrosome (currently done manually). It is a machine learning-based model that takes as input any 3D images from a microscope with DAPI channel for the nuclei and two other channels for the centrioles and gives as output the segmentation of nuclei and their corresponding centrioles.
 
 ## Global Strategy: 
 
