@@ -25,8 +25,8 @@ Nucleus will then be separately detected and annotated based on their morphology
 3-	Centriole segmentation
 
 <p float="left">
-  <img src=https://github.com/journeadrien/autoscoring_centrioles/blob/master/images/centriole.png width="32%" />
-  <img src=https://github.com/journeadrien/autoscoring_centrioles/blob/master/images/centriole2.png width="32%" /> 
+  <img src=https://github.com/journeadrien/autoscoring_centrioles/blob/master/images/centriole2.png width="32%" />
+  <img src=https://github.com/journeadrien/autoscoring_centrioles/blob/master/images/centriole4.png width="32%" /> 
   <img src=https://github.com/journeadrien/autoscoring_centrioles/blob/master/images/centriole3.png width="32%" /> 
 </p>
 
