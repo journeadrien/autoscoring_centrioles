@@ -24,6 +24,12 @@ Nucleus will then be separately detected and annotated based on their morphology
 
 3-	Centriole segmentation
 
+<p float="left">
+  <img src=https://github.com/journeadrien/autoscoring_centrioles/blob/master/images/centriole.png width="32%" />
+  <img src=https://github.com/journeadrien/autoscoring_centrioles/blob/master/images/centriole1.png width="32%" /> 
+  <img src=https://github.com/journeadrien/autoscoring_centrioles/blob/master/images/centriole2.png width="32%" /> 
+</p>
+
 Centriole segmentation is a difficult task for a deep learning model because of the high dimensionality: dataset * position * Z_stack * channel * image_x * image_y which is huge (it is the same problem as detect small stars in a image of space with a lot of noises). We need to carefully choose the values to reduce at maximum. For instance, we reduced the z_stack with normal RGB input by putting: (R: mean(z), G: std(z), B: max_projection(z)).
 
 4-	Centriole annotation 
