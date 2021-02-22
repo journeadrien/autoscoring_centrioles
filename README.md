@@ -1,7 +1,7 @@
 # autoscoring_centrioles
 
 ## Project Goal:
-Machine learning based model that takes as input any 3D images from a microscope with DAPI channel for the nuclei and two others channel for the centrioles and gives as output the segmentation of nuclei and their corresponding centrioles.
+Machine learning based model that takes as input any 3D images from a microscope with DAPI channel for the nuclei and two others channels for the centrioles and gives as output the segmentation of nuclei and their corresponding centrioles as well as statistics.
 
 ## Global Strategy: 
 
