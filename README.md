@@ -32,6 +32,8 @@ Nucleus will then be separately detected and annotated based on their morphology
 
 Centriole segmentation is a difficult task for a deep learning model because of the high dimensionality: dataset * position * Z_stack * channel * image_x * image_y which is huge (it is the same problem as detect small stars in a image of space with a lot of noises). We need to carefully choose the values to reduce at maximum. For instance, we reduced the z_stack with normal RGB input by putting: (R: mean(z), G: std(z), B: max_projection(z)).
 
+Multiple complex models were trained on labeled images. However we could only get to 65% detection rate with a tendency to no dissociate two foci. In order to resolve it, I build a homemade neural network of FasterRCNN architecture with as backbone a the only five layers of a ResNET.
+
 4-	Centriole annotation 
 
 Based on centriole morphology, we could as for nuclei annotation, detect the division stage of the cell which can be put into perspective from the nuclei annotation.
